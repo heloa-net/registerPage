@@ -1,0 +1,24 @@
+{
+  "name": "register-page",
+  "version": "1.0.0",
+  "description": "Landing page for registration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/she-dev/registerPage.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "registration"
+  ],
+  "author": "Heloá Meneses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/she-dev/registerPage/issues"
+  },
+  "homepage": "https://github.com/she-dev/registerPage#readme"
+}
