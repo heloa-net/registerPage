@@ -1,0 +1,73 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li, nav ul h1 {
+    display: inline;
+}
+
+button {
+    padding: 10px 40px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+
+.facebookButton {
+    background-image: url('../img/facebook_logo.svg');
+    background-repeat: no-repeat;
+}
+
+
+/*Nav bar*/
+
+/*Logo & slogan */
+
+/*Sign in text */
+
+/*remove sign in text on mobile */
+
+/*Sign in button */
+
+/*Heading */
+
+/*Social login buttons */
+
+/* Or border */
+
+/*Social login disclaimer */
+
+/*Mobile buttons */
+
+/*Or section */
+
+/*Registering form */
+
+/*Localization of required messages*/
+
+/*Register button */
+
+/*Hide cellphone on Mobile form */
+
+
+
+
+
+
+
+
+
+
+
