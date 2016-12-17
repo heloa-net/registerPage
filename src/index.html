@@ -13,21 +13,19 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
 </head>
 
 <body>
     <header>
-        <figure>
-            <h1><img src="./img/logo-moip.svg" alt="Moip" class="logo"></h1>
-            <figcaption>Feito para o seu negócio</figcaption>
-        </figure>
-        <nav>
-            <ul>
-                <li class="have-account">Já tenho conta</li>
-                <li><a href="#" class="login">Fazer login</a></li>
-            </ul>
-        </nav>
+        <section class="logo">
+            <h1></h1>
+            <p>Feito para o seu negócio</p>
+        </section>
+        <section class="login">
+            <p>Já tem conta?</p>
+            <button>Entrar</button>
+        </section>
     </header>
 
     <main>
@@ -52,7 +50,7 @@
 
         <section class="separator">ou</section>
         
-        <section>
+        <section class="registerForm">
             <form action="sendForm">
                 <input type="text" name="fullName" placeholder="Nome completo" required><br>
                 <input type="text" name="email" placeholder="Email" required><br>
@@ -70,12 +68,6 @@
             </form>
         </section>
     </main>
-
-    
-
-    <!-- Test on mobile -->
-    <!-- SEO optimization -->
-    <!-- semantic html -->
 
     <script src="js/main.js"></script>
 </body>

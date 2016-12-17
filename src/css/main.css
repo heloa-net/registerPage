@@ -19,9 +19,6 @@ nav ul li, nav ul h1 {
 }
 
 button {
-    padding: 10px 40px;
-    text-align: center;
-    display: block;
     font-size: 12px;
 }
 
@@ -30,18 +27,124 @@ button {
     background-repeat: no-repeat;
 }
 
+/*background image*/
 
 /*Nav bar*/
 
-/*Logo & slogan */
+/*Logo & slogan COLORS & Font */
+header {
+    margin: 0 auto;
+    max-width: 75%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-/*Sign in text */
+/*header figure {
+    display: inline-block;
+    margin: 2em 80px;
+}*/
 
-/*remove sign in text on mobile */
+header h1 {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    background-image: url(../img/logo-moip.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
 
-/*Sign in button */
+/*header figure figcaption {
+    display: inline-block;
+    word-break: break-word;
+    font-size: 0.95em;
+    line-height: 1.4;
+    padding-left: 10px;
+    width: 90px;
+}*/
 
-/*Heading */
+header figure {
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+}
+
+.logo, .login {
+    display: inline-block;
+    width: 49%;
+    height: 150px;
+    margin: 0;
+    border: solid #6AC5AC 3px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+header .login p {
+    position: absolute;
+    top: 30%;
+    right: 42%;
+    font-size: 0.9em;
+}
+
+header .logo p {
+    top: 31%;
+    margin-left: 125px;
+    position: relative;
+    word-break: break-word;
+    width: 90px;
+    font-size: .9em;
+    line-height: 1.2;
+}
+
+header button {
+    position: absolute;
+    top: 33%;
+    right: 3%;
+    font-size: .85em;
+    padding: 8px 45px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-weight: 100;
+}
+
+main {
+    width: 100%;
+    display: inline-block;
+}
+
+main header {
+    text-align: center;
+}
+
+main header p {
+    font-size: 1.2em;
+    margin-top: -15px;
+}
+
+main section.socialLogin {
+    width: 40%;
+    display: inline-block;
+}
+
+main section.separator {
+    width: 3%;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+main section.registerForm {
+    width: 40%;
+    display: inline-block;
+}
+
+
 
 /*Social login buttons */
 
@@ -61,7 +164,20 @@ button {
 
 /*Hide cellphone on Mobile form */
 
+/*Test on mobile */
+    /*remove sign in text on mobile */
+    /* Hide header <p> on mobile */
 
+/*SEO optimization */
+/*semantic html */
+
+/* image rights? */
+
+/* modernizr */
+ /*font colors */
+ /* font family */
+
+ /*css nesting best practices*/
 
 
 
