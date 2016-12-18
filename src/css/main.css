@@ -27,11 +27,6 @@ button {
     background-repeat: no-repeat;
 }
 
-/*background image*/
-
-/*Nav bar*/
-
-/*Logo & slogan COLORS & Font */
 header {
     margin: 0 auto;
     max-width: 75%;
@@ -39,11 +34,6 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-/*header figure {
-    display: inline-block;
-    margin: 2em 80px;
-}*/
 
 header h1 {
     position: absolute;
@@ -54,15 +44,6 @@ header h1 {
     width: 100%;
     height: 100%;
 }
-
-/*header figure figcaption {
-    display: inline-block;
-    word-break: break-word;
-    font-size: 0.95em;
-    line-height: 1.4;
-    padding-left: 10px;
-    width: 90px;
-}*/
 
 header figure {
     display: inline-block;
@@ -129,8 +110,9 @@ main header p {
 }
 
 main section.socialLogin {
-    width: 40%;
+    width: 27%;
     display: inline-block;
+    padding-left: 16%;
 }
 
 main section.separator {
@@ -142,6 +124,13 @@ main section.separator {
 main section.registerForm {
     width: 40%;
     display: inline-block;
+    margin: 25px 10px 0 0;
+}
+
+main section footer {
+    line-height: normal;
+    font-size: 0.8em;
+    margin-top: -10px;
 }
 
 
@@ -164,6 +153,8 @@ main section.registerForm {
 
 /*Hide cellphone on Mobile form */
 
+/*background image*/
+
 /*Test on mobile */
     /*remove sign in text on mobile */
     /* Hide header <p> on mobile */
@@ -178,6 +169,8 @@ main section.registerForm {
  /* font family */
 
  /*css nesting best practices*/
+
+ /* check já tem conta under 900px*/
 
 
 
