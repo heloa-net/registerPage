@@ -22,11 +22,6 @@ button {
     font-size: 12px;
 }
 
-.facebookButton {
-    background-image: url('../img/facebook_logo.svg');
-    background-repeat: no-repeat;
-}
-
 header {
     margin: 0 auto;
     max-width: 75%;
@@ -112,7 +107,7 @@ main header p {
 main section.socialLogin {
     width: 27%;
     display: inline-block;
-    padding-left: 16%;
+    padding-left: 20%;
 }
 
 main section.separator {
@@ -133,7 +128,48 @@ main section footer {
     margin-top: -10px;
 }
 
+section.socialLogin .facebookButton {
+    background-image: url('../img/facebook_logo.svg');
+    background-repeat: no-repeat;
+    display: block;    
+}
 
+section.socialLogin .googleButton {
+    background-image: url('../img/google.jpg');
+    background-repeat: no-repeat;
+    display: block;    
+}
+
+section.registerForm form {
+    width: 85%
+}
+
+section.registerForm input {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-weight: 100;
+    padding: 6px 0 6px 15px;
+    margin: 3px 4px 3px 0;
+    font-size: 0.9em;
+}
+
+#input-name, #input-email {
+    width: 100%
+}
+
+#input-cpf {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+}
+
+#input-cellphone {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    right: -14%;
+}
 
 /*Social login buttons */
 
