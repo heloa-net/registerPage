@@ -152,10 +152,13 @@ section.registerForm input {
     padding: 6px 0 6px 15px;
     margin: 3px 4px 3px 0;
     font-size: 0.9em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #input-name, #input-email {
-    width: 100%
+    width: 100%;
 }
 
 #input-cpf {
@@ -165,10 +168,40 @@ section.registerForm input {
 }
 
 #input-cellphone {
-    width: 40%;
+    width: 43%;
     display: inline-block;
     position: relative;
     right: -14%;
+}
+
+#input-password {
+    margin: 3px 5px 3px 0;
+    width: 48%;
+}
+
+#input-confirmPassword {
+    margin: 3px 0 3px 3px;
+    width: 48%;
+}
+
+section.registerForm label {
+    font-size: 0.8em;
+}
+
+section.registerForm input.submitButton {
+    position: absolute;
+    right: 17%;
+    font-size: .85em;
+    padding: 8px 45px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-weight: 100;
+    font-size: 1.2em;
+    background-color: #1f4d73;
+    padding: 15px 100px;
+    color: #fff;
 }
 
 /*Social login buttons */
