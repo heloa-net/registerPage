@@ -34,7 +34,7 @@ header h1 {
     position: absolute;
     top: 20%;
     left: 10px;
-    background-image: url(../img/logo-moip.svg);
+    background-image: url(../img/moip_logo.svg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -52,7 +52,6 @@ header figure {
     width: 49%;
     height: 150px;
     margin: 0;
-    border: solid #6AC5AC 3px;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -63,8 +62,9 @@ header figure {
 header .login p {
     position: absolute;
     top: 30%;
-    right: 42%;
+    right: 155px;
     font-size: 0.9em;
+    word-wrap: break-word;
 }
 
 header .logo p {
@@ -97,6 +97,7 @@ main {
 
 main header {
     text-align: center;
+    margin-bottom: -30px;
 }
 
 main header p {
@@ -108,18 +109,24 @@ main section.socialLogin {
     width: 27%;
     display: inline-block;
     padding-left: 20%;
+    position: relative;
+    top: 95px;
 }
 
 main section.separator {
     width: 3%;
     display: inline-block;
     padding: 0 15px;
+    position: relative;
+    bottom: 15px;
 }
 
 main section.registerForm {
     width: 40%;
     display: inline-block;
     margin: 25px 10px 0 0;
+    position: relative;
+    top: 70px;
 }
 
 main section footer {
@@ -128,16 +135,42 @@ main section footer {
     margin-top: -10px;
 }
 
+section.socialLogin button {
+    border-color: transparent;
+    border-radius: 4px;
+    font-size: 0.75em;
+    position: relative;
+    text-align: center;
+}
+
 section.socialLogin .facebookButton {
-    background-image: url('../img/facebook_logo.svg');
+    background-color: #3b5998;
+    background-image: url(../img/facebook_logo.svg);
     background-repeat: no-repeat;
-    display: block;    
+    color: #fff;
+    display: block;
+    left: 17%;
+    padding: 4px 60px;
+    background-position: 5px, left;
+    background-size: 25px 25px;
 }
 
 section.socialLogin .googleButton {
-    background-image: url('../img/google.jpg');
+    background: url(../img/google_logo.svg);
+    display: block;
+    left: 30%;
+    margin: 10px 0 30px 0;
+    padding: 4px 15px 4px 40px;
+    background-color: #ff5d5d;
+    color: #fff;
     background-repeat: no-repeat;
-    display: block;    
+    background-position: 5px, left;
+    background-size: 25px 25px;
+}
+
+section.socialLogin p {
+    line-height: 1.3;
+    text-align: justify;
 }
 
 section.registerForm form {
@@ -149,7 +182,7 @@ section.registerForm input {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-weight: 100;
-    padding: 6px 0 6px 15px;
+    padding: 7px 0 7px 15px;
     margin: 3px 4px 3px 0;
     font-size: 0.9em;
     -webkit-box-sizing: border-box;
@@ -190,7 +223,7 @@ section.registerForm label {
 
 section.registerForm input.submitButton {
     position: absolute;
-    right: 17%;
+    right: 25%;
     font-size: .85em;
     padding: 8px 45px;
     border-radius: 6px;
