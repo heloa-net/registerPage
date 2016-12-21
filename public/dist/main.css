@@ -7,7 +7,7 @@ html {
 body {
     color: #fff;
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background-image: url('../img/bg.jpg');
+    background-image: url('./img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 20%;
@@ -44,7 +44,7 @@ header h1 {
     position: absolute;
     top: 20%;
     left: 10px;
-    background-image: url(../img/moip_logo.svg);
+    background-image: url(./img/moip_logo.svg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -155,7 +155,7 @@ section.socialLogin button {
 
 section.socialLogin .facebookButton {
     background-color: #3b5998;
-    background-image: url(../img/facebook_logo.svg);
+    background-image: url(./img/facebook_logo.svg);
     background-repeat: no-repeat;
     color: #fff;
     display: block;
@@ -166,7 +166,7 @@ section.socialLogin .facebookButton {
 }
 
 section.socialLogin .googleButton {
-    background: url(../img/google_logo.svg);
+    background: url(./img/google_logo.svg);
     display: block;
     left: 30%;
     margin: 10px 0 30px 0;
