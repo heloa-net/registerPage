@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app lang="pt-BR">
+<html ng-app="registerApp" lang="pt-BR">
 
     <head>
         <meta charset="utf-8">
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="dist/main.css">
     </head>
 
-    <body ng-controller="AppController">
+    <body ng-controller="AppCtrl">
         <header>
             <section class="logo">
                 <h1></h1>
@@ -45,24 +45,26 @@
             <section class="separator">ou</section>
             
             <section class="registerForm">
-                <form action="sendForm">
-                    <input type="text" id="input-name" name="fullName" placeholder="Nome completo" required><br>
-                    <input type="text" id="input-email" name="email" placeholder="Email" required><br>
-                    <input type="text" id="input-cpf" name="cpf" placeholder="CPF" required>
-                    <input type="text" id="input-cellphone" name="cellphone" placeholder="Celular" required><br><br>
+                <form>
+                    <input type="text" id="input-name" ng-model="user.name" name="fullName" placeholder="Nome completo" required><br>
+                    <input type="text" id="input-email" ng-model="user.email" name="email" placeholder="Email" required><br>
+                    <input type="text" id="input-cpf" ng-model="user.cpf" name="cpf" placeholder="CPF" required>
+                    <input type="text" id="input-cellphone" ng-model="user.cellphone" name="cellphone" placeholder="Celular" required><br><br>
 
-                    <input type="password" id="input-password" name="password" placeholder="Senha" required>
-                    <input type="password" id="input-confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required><br>
+                    <input type="password" id="input-password" ng-model="user.password" name="password" placeholder="Senha" required>
+                    <input type="password" id="input-confirmPassword" ng-model="user.confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required><br>
 
-                    <input type="checkbox" name="acceptTerms" value="acceptTerms" required>
+                    <input type="checkbox" id="input-acceptTerms" ng-model="user.acceptTerms" name="acceptTerms" value="acceptTerms" required>
                     <label for="acceptTerms">Li e concordo com os <a href="">termos de uso</a></label>
                     <br><br>
                     
-                    <input type="submit" class="submitButton" value="Cadastrar">
+                    <input type="submit" ng-click="submitForm()" class="submitButton" value="Cadastrar">
                 </form>
             </section>
         </main>
 
         <script src="dist/angular.min.js"></script>
+        <script src="app/controllers/appController.js"></script>
+
     </body>
 </html>
