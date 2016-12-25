@@ -40,32 +40,30 @@ registerApp.controller('AppCtrl', [
                     },
                     type: ''
                 };
-            if (u.acceptTerms) {
-                user.email.address = u.email;
-                user.person.name = u.name; // parse!
-                user.person.lastName = u.name;
-                user.person.taxDocument.number = u.cpf;
-                user.person.phone.number = u.cellphone;
-                //  handle area code
-                console.log('user', user);
+ 
+            user.email.address = u.email;
+            user.person.name = u.name; // parse!
+            user.person.lastName = u.name;
+            user.person.taxDocument.number = u.cpf;
+            user.person.phone.number = u.cellphone;
+            //  handle area code
+            console.log('user', user);
 
-                $http({
-                        method: 'POST',
-                        url: 'https://private-anon-b26c3c7809-testemoip.apiary-mock.com/v2/accounts',
-                        data: user,
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                }).then(function successCallback(response) {
-                    console.log('data: ', response.data);
-                    console.log('status: ', response.status);
-                    alert(`Conta de ${user.person.name} criada com sucesso!\nPor favor confirme seu e-mail!`);
-                }, function errorCallback(response) {
-                    console.error(response);
-                });
-            } else {
-                alert('Marque a caixa de aceite de termos para prosseguir.');
-            }
+            $http({
+                    method: 'POST',
+                    url: 'https://private-anon-b26c3c7809-testemoip.apiary-mock.com/v2/accounts',
+                    data: user,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+            }).then(function successCallback(response) {
+                console.log('data: ', response.data);
+                console.log('status: ', response.status);
+                alert(`Conta de ${user.person.name} criada com sucesso!\nPor favor confirme seu e-mail!`);
+                // Abrir tela nova
+            }, function errorCallback(response) {
+                console.error(response);
+            });
             // console.log('user is: ', user); $http.post('/users', $scope.user);
             // $http.post('/users', user);
         };
