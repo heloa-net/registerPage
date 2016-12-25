@@ -13,7 +13,8 @@ registerApp.controller('AppCtrl', [
         //         console.log("Error while getting the response.\n" + error);
         //     });
 
-        $http.defaults.transformResponse = []; // Impedir a serialização do JSON que resulta em erro
+        $http.defaults.transformResponse = []; 
+        // Impedir a serialização do JSON da resposta
 
         $scope.submitForm = function () {
             console.log($scope.user);

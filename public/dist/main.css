@@ -231,7 +231,7 @@ section.registerForm label {
     font-size: 0.8em;
 }
 
-section.registerForm input.submitButton {
+section.registerForm .submitButton {
     position: absolute;
     right: 25%;
     font-size: .85em;
