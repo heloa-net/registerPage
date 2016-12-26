@@ -4,7 +4,10 @@
   "description": "Landing page for registration.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "launch": "heroku open",
+    "launch:windows": "start https://register-page.herokuapp.com/"
   },
   "repository": {
     "type": "git",
