@@ -200,29 +200,33 @@ section.registerForm input {
     box-sizing: border-box;
 }
 
-#input-name, #input-email {
+section.registerForm .css-form input.ng-invalid.ng-touched {
+    background-color: rgba(255, 0, 12, 0.34);
+}
+
+#name, #email {
     width: 100%;
 }
 
-#input-cpf {
+#cpf {
     width: 40%;
     display: inline-block;
     position: relative;
 }
 
-#input-cellphone {
+#cellphone {
     width: 43%;
     display: inline-block;
     position: relative;
     right: -14%;
 }
 
-#input-password {
+#password {
     margin: 3px 5px 3px 0;
     width: 48%;
 }
 
-#input-confirmPassword {
+#confirmPassword {
     margin: 3px 0 3px 3px;
     width: 48%;
 }

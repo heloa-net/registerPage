@@ -45,7 +45,7 @@
             <section class="separator">ou</section>
             
             <section class="registerForm">
-                <form name="form" novalidate>
+                <form name="form" class="css-form" novalidate>
                     <input type="text" id="name" ng-model="user.name" name="name" placeholder="Nome completo" required><br>
                     <div ng-show="form.$submitted || form.name.$touched">
                         <div ng-show="form.name.$error.required">Insira seu nome.</div>
