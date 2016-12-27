@@ -65,8 +65,9 @@ registerApp.controller('AppCtrl', [
             }, function errorCallback(response) {
                 console.error(response);
             });
-            // console.log('user is: ', user); $http.post('/users', $scope.user);
-            // $http.post('/users', user);
+            console.log('user is: ', user); 
+            $http.post('/users', user);
+            $http.get('/users');
         };
     }
 ]);
