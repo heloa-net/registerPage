@@ -12,5 +12,5 @@ app.post('/users', function (req, res) {
 
 });
 
-app.listen(3000);
-console.log("Servidor rodando na porta 3000\n Abra http://localhost:3000");
+app.listen(process.env.PORT || 5000)
+console.log("Servidor rodando na porta 5000\nAbra http://localhost:5000");
