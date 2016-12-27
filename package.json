@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/she-dev/registerPage#readme",
   "dependencies": {
-    "express": "^4.14.0",
-    "mongojs": "^2.4.0"
+    "express": "^4.14.0"
   }
 }
