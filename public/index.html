@@ -46,21 +46,21 @@
             <section class="separator">ou</section>
             
             <section class="registerForm">
-                <form name="form" class="css-form" novalidate>
-                    <input type="text" id="name" ng-model="user.name" name="name" placeholder="Nome completo" pattern="[a-z\s]+$" required><br>
-                    <input type="text" id="email" ng-model="user.email" name="email" placeholder="Email" required><br>
-                    <input type="text" id="cpf" ng-model="user.cpf" name="cpf" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                <form name="userForm" class="css-form" ng-submit="submitForm(userForm.$valid)"  novalidate>
+                    <input type="text" ng-model="user.name" name="name" placeholder="Nome completo" ng-pattern="/^[a-zA-Z ]+$/" ng-required><br>
+                    <input type="email" ng-model="user.email" name="email" placeholder="Email" ng-required><br>
+                    <input type="text" ng-model="user.cpf" name="cpf" placeholder="CPF" ng-pattern="/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/" ng-required>
 
-                    <input type="tel" id="cellphone" ng-model="user.cellphone" name="cellphone" placeholder="Celular" maxlength="15" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" required><br><br>
+                    <input type="tel" ng-model="user.cellphone" name="cellphone" placeholder="Celular" maxlength="15" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" ng-required><br><br>
 
-                    <input type="password" id="password" ng-model="user.password" name="password" placeholder="Senha" required>
-                    <input type="password" id="confirmPassword" ng-model="user.confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required><br>
+                    <input type="password" ng-model="user.password" name="password" placeholder="Senha" ng-required>
+                    <input type="password" ng-model="user.confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" ng-required><br>
 
-                    <input type="checkbox" id="acceptTerms" ng-model="user.acceptTerms" name="acceptTerms" value="acceptTerms" required>
+                    <input type="checkbox" ng-model="user.acceptTerms" name="acceptTerms" value="acceptTerms" ng-required>
                     <label for="acceptTerms">Li e concordo com os <a href="">termos de uso</a></label>
                     <br><br>
                     
-                    <input type="submit" ng-click="submitForm()" class="submitButton" value="Cadastrar">
+                    <button type="submit" class="submitButton" ng-disabled="!userForm.$valid || !user.acceptTerms">Cadastrar</button>  
                 </form>
             </section>
         </main>
