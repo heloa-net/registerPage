@@ -71,5 +71,24 @@ angular
                 // $http.post('/users', user);
                 // $http.get('/users');
             };
-        }
-    ]);
+        }])
+    .directive('comparewith', [
+        '$parse',
+        function ($parse) {
+            return {
+                require: 'ngModel',
+                link: function (scope, elm, attr, ngModel) {
+                    var getter = $parse(attr.comparewith);
+
+                    ngModel.$validators.comparewith = function (val) {
+                        return val === getter(scope);
+                    }
+
+                    scope.$watch(attr.comparewith, function (value, otherValue) {
+                        if (value !== otherValue) {
+                            ngModel.$validate();
+                        }
+                    });
+                }
+            }
+        }]);
