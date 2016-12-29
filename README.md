@@ -2,20 +2,21 @@
 Landing page for registration. Built with JS, HTML, CSS. Using npm as a build tool.
 
 ### TODO
-· Check the background image on resizing
-· Check JS validation
-· Check JS localization
-· Check password handling
-· Decide whether or not to refactor to Angular 2
-    · Then add Ng2 to project 
-    · Refactor https://goo.gl/w8d5FY
+
+· Responsive design
+· Redirect on success
 
 ### How to run
 · TODO
-· Add open localhost:3000 to npm start
+· Add open localhost:5000 to npm start
+
+
+#### TODO
+· Add instructions on readme or set npm to required files from node_modules to dist
 
 ### Tests
 · TODO
 
 ### Live demo 
-· TODO: add Heroku link
+
+See the live demo on Heroku(https://register-page.herokuapp.com)
