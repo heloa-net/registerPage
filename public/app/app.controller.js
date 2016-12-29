@@ -68,8 +68,8 @@ angular
                     console.error(response);
                 });
                 console.log('user is: ', user); 
-                $http.post('/users', user);
-                $http.get('/users');
+                // $http.post('/users', user);
+                // $http.get('/users');
             };
         }
     ]);
