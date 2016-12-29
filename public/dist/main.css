@@ -33,6 +33,18 @@ button {
     font-size: 12px;
 }
 
+tooltip, tip-cont {
+    width: 100%;
+}
+
+tooltip tip-tip {
+    font-size: .8em;
+}
+
+tooltip.tooltips._top._steady._ready {
+    display: inline;
+}
+
 header {
     margin: 0 auto;
     max-width: 75%;
