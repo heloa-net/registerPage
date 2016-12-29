@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('registerApp', []);
+angular.module('registerApp', ['720kb.tooltips']);
