@@ -51,10 +51,10 @@
                     <input type="email" ng-model="user.email" name="email" placeholder="Email" required><br>
                     <input type="text" ng-model="user.cpf" name="cpf" placeholder="CPF" ng-pattern="/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/" required>
 
-                    <input type="tel" ng-model="user.cellphone" name="cellphone" placeholder="Celular" maxlength="15" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" required><br><br>
+                    <input type="tel" ng-model="user.cellphone" name="cellphone" placeholder="Celular" ng-maxlength="15" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" required><br><br>
 
-                    <input type="password" ng-model="user.password" name="password" placeholder="Senha" required>
-                    <input type="password" ng-model="user.confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required><br>
+                    <input type="password" ng-model="user.password" name="password" placeholder="Senha" ng-minlength="6" required>
+                    <input type="password" ng-model="user.confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" comparewith="user.password" required><br>
 
                     <input type="checkbox" ng-model="user.acceptTerms" name="acceptTerms" value="acceptTerms" required>
                     <label for="acceptTerms">Li e concordo com os <a href="">termos de uso</a></label>
