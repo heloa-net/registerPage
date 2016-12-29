@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="dist/normalize.min.css">
         <link rel="stylesheet" href="dist/angular-tooltips.min.css">
         <link rel="stylesheet" href="dist/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400|Open+Sans">
         
     </head>
 
@@ -29,22 +30,36 @@
         <main>
             <header>
                 <h2>Mais fácil ainda,</h2>
-                <p>Só precisamos de algumas informações</p>
+                <p class="info">Só precisamos de algumas informações</p>
             </header>
                 
             <section class="socialLogin">
                 <button type="button" class="facebookButton">
                     Log in with Facebook
                 </button>
+
                 <button type="button" class="googleButton">
                     Sign in with Google
                 </button>
 
+                 <div class="mobileLogin">
+                    <a href="#" class="fbButtonMob">
+                        <img border="0" alt="Google Login" src="./dist/img/facebook_logo_mobile.png" width="72" height="72">
+                    </a>
+                    
+                    <a href="#" class="ggButtonMob">
+                        <img border="0" alt="Google Login" src="./dist/img/google_logo_mobile.svg" width="70" height="70">
+                    </a>
+                </div>
+                
+
                 <p class="privacy">Fique tranquilo, não vamos usar seus dados, nem fazer publicações em seu nome!</p>
-                <footer class="termsOfUse">Ao usar o <strong>Facebook</strong> ou o <strong>Google</strong>, você concorda com nossos <a href="">termos de uso</a></footer>
+                <footer class="privacy">Ao usar o <strong>Facebook</strong> ou o <strong>Google</strong>, você concorda com nossos <a href="">termos de uso</a></footer>
             </section>
 
-            <section class="separator">ou</section>
+            <section class="separator">
+                <h4>ou</h4>
+            </section>
             
             <section class="registerForm">
                 <form name="userForm" class="css-form" ng-submit="submitForm(userForm.$valid)" novalidate>
