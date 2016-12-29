@@ -60,8 +60,19 @@ angular
                             'Content-Type': 'application/json'
                         }
                 }).then(function successCallback(response) {
-                    console.log('data: ', response.data);
-                    console.log('status: ', response.status);
+                    var msg = ''
+                    // console.log('data: ', response.data);
+                    // console.log('status: ', response.status);
+                    switch (response.status) {
+                        case 200:
+                        case 201:
+                            msg = 'Conta criada com sucesso!';
+                            break;
+                        default: 
+                            msg = 'Ocorreu um erro.'
+                            break;
+                    }
+                    alert(msg);
                     // alert(`Conta de ${user.person.name} criada com sucesso!\nPor favor confirme seu e-mail!`);
                     // Abrir tela nova
                 }, function errorCallback(response) {
