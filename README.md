@@ -6,7 +6,7 @@ Landing page for registration. Built with HTML, CSS and JS using Express, Angula
 
     npm install && npm start
 
-Open http://localhost:5000 to see it running.
+Open [http://localhost:5000](http://localhost:5000)  to see it running.
 
 ### Live demo 
 
@@ -25,7 +25,7 @@ Faça o [download](https://github.com/she-dev/registerPage/archive/master.zip), 
 
     npm install && npm start
 
-Abra http://localhost:5000 
+Abra [http://localhost:5000](http://localhost:5000) 
 
 ### Live demo 
 
