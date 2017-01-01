@@ -76,7 +76,7 @@
                     </span>
 
                     <span tooltips tooltip-template="Digite seu celular com DDD, por exemplo 119847654321">
-                        <input type="tel" ng-model="user.cellphone" name="cellphone" placeholder="Celular" ng-minlength="10" ng-maxlength="11" ng-pattern="/^[1-9]+[0-9]*$/" required>
+                        <input type="tel" ng-model="user.cellphone" name="cellphone" placeholder="Celular" ng-minlength="10" ng-maxlength="11" ng-pattern="/^[1-9]+[0-9]*$/" ng-required=checkScreen()>
                     </span><br><br>
 
                     <span tooltips tooltip-template="Mínimo de 6 caracteres.">
