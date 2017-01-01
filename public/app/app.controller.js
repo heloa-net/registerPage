@@ -19,7 +19,7 @@ angular
             // Impedir a serialização do JSON da resposta
 
             $scope.submitForm = function () {
-                console.log($scope.user);
+                // console.log($scope.user);
                 var postData = {},
                     u = $scope.user,
                     // import user as JSON
@@ -50,7 +50,6 @@ angular
                 user.person.taxDocument.number = u.cpf;
                 user.person.phone.number = u.cellphone;
                 //  handle area code
-                console.log('user', user);
 
                 $http({
                         method: 'POST',
@@ -70,7 +69,6 @@ angular
                             str = response.data;
                             json = JSON.stringify(eval("(" + str + ")"));
                             data = JSON.parse(json);
-                            console.log('data', data);
                             msg = 'Conta de ' +data.person.name + ' ' + data.person.lastName + ' criada com sucesso.' +
                                   '\nConfirme seu e-mail clicando no link que enviamos para ' + data.email.address;
                             break;
@@ -83,7 +81,6 @@ angular
                     console.error(response);
                     alert('Ocorreu um erro.');
                 });
-                console.log('user is: ', user); 
                 // $http.post('/users', user);
                 // $http.get('/users');
             };
@@ -91,6 +88,7 @@ angular
     .directive('comparewith', [
         '$parse',
         function ($parse) {
+            // Validar confirmação de senha
             return {
                 require: 'ngModel',
                 link: function (scope, elm, attr, ngModel) {
@@ -103,8 +101,6 @@ angular
                     scope.$watch(attr.comparewith, function (value, otherValue) {
                         if (value !== otherValue) {
                             ngModel.$validate();
-                            console.log('attr', attr);
-                            console.log('value', value);
                         }
                     });
                 }
