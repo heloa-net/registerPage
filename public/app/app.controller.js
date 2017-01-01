@@ -60,23 +60,28 @@ angular
                             'Content-Type': 'application/json'
                         }
                 }).then(function successCallback(response) {
-                    var msg = ''
-                    // console.log('data: ', response.data);
-                    // console.log('status: ', response.status);
+                    var msg = '';
                     switch (response.status) {
                         case 200:
+                            msg = 'Conta criada com sucesso';
+                            break;
                         case 201:
-                            msg = 'Conta criada com sucesso!';
+                            var str = '', json = '', data = {};
+                            str = response.data;
+                            json = JSON.stringify(eval("(" + str + ")"));
+                            data = JSON.parse(json);
+                            console.log('data', data);
+                            msg = 'Conta de ' +data.person.name + ' ' + data.person.lastName + ' criada com sucesso.' +
+                                  '\nConfirme seu e-mail clicando no link que enviamos para ' + data.email.address;
                             break;
                         default: 
                             msg = 'Ocorreu um erro.'
                             break;
                     }
                     alert(msg);
-                    // alert(`Conta de ${user.person.name} criada com sucesso!\nPor favor confirme seu e-mail!`);
-                    // Abrir tela nova
                 }, function errorCallback(response) {
                     console.error(response);
+                    alert('Ocorreu um erro.');
                 });
                 console.log('user is: ', user); 
                 // $http.post('/users', user);
@@ -98,6 +103,8 @@ angular
                     scope.$watch(attr.comparewith, function (value, otherValue) {
                         if (value !== otherValue) {
                             ngModel.$validate();
+                            console.log('attr', attr);
+                            console.log('value', value);
                         }
                     });
                 }
