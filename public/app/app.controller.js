@@ -17,6 +17,14 @@ angular
 
             $http.defaults.transformResponse = []; 
             // Impedir a serialização do JSON da resposta
+ 
+            $scope.checkScreen = function () {
+                // Em telas pequenas o campo celular fica oculto e não pode ser obrigatório
+                if (window.innerWidth > 700) {
+                    return true;
+                }
+                return false;
+            };
 
             $scope.submitForm = function () {
                 // console.log($scope.user);
