@@ -380,14 +380,79 @@ section.registerForm label {
 
 @media only screen and (max-width : 510px) {
 
+    header {
+        margin: -4% 3%;
+    }
+    section.logo {
+        height: 100%;
+    }
+    section.login button {
+        margin: -13% -43%;
+    }
+    main {
+        top: 90px;
+    }
+    header .logo p {
+        top: 30px;
+        color: #666768
+    }
+    main header h2 {
+        margin: 0 10%;
+        width: 100%;
+    }
+    main header p {
+        margin: 0 10%;
+        width: 100%;
+    }
     .mobileLogin {
-        margin-left: 32%;
+        margin-left: 24%;
+        margin-top: 0;
+    }
+    main section.separator {
+        margin: 0;
+        top: 0;
+    }
+    main section.registerForm {
+        margin: 0 10px 0 0;
     }
 }
 
-@media only screen and (max-width : 510px) {
-
-    .mobileLogin {
-        margin-left: 27%;
+@media only screen and (max-width : 400px) {
+    header {
+        margin: -7% 3%;
     }
+    header .logo p {
+        margin-left: 95%;
+    }
+    main header {
+        margin-bottom: -13%;
+    }
+    main header h2 {
+        font-size: 1.4em;
+    }
+    main header p {
+        font-size: 1em;
+    }    
+}
+
+@media only screen and (max-width : 340px) {
+    main header {
+        margin-bottom: -15%;
+    }
+    section.registerForm label {
+        font-size: 0.75em;
+    }
+    input {
+        padding: 5px 0 5px 10px;
+    }
+    br {
+        display: none;
+    }
+    button.submitButton {
+        font-size: 1em;
+        margin-top: 10px;
+        padding: 6px 15px;
+    }
+
+
 }
